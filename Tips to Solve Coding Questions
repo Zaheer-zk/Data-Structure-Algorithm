@@ -3,7 +3,7 @@ Tips to solve coding quetions
 
 If input array is sorted then
     - Binary search
-      - We can you BinarySearch for finding for certain range and want lesser then that range [Question - Painting Partition](https://practice.geeksforgeeks.org/problems/the-painters-partition-problem1535/1)
+      - We can you use BinarySearch for finding for certain range and want lesser then that range. [Question - Painting Partition](https://practice.geeksforgeeks.org/problems/the-painters-partition-problem1535/1)
     - Two pointers
 
 If asked for all permutations/subsets then
@@ -42,4 +42,4 @@ Else
     - Sort input for O(nlogn) time and O(1) space
     
     
-    For more checkout - https://github.com/seanprashad/leetcode-patterns
+    For more checkout - (https://github.com/seanprashad/leetcode-patterns)
