@@ -1,10 +1,10 @@
 # Data-Structure-Algorithm
 
 
-#Questions & Solution
+## Questions & Solution
+- Adding Soon
 
-
-Tips to solve coding quetions
+## Tips to solve coding quetions
 
 ```
 If input array is sorted then
