@@ -28,44 +28,75 @@
 
 ```
 If input array is sorted then
-    - Binary search
-      - We can you use BinarySearch for finding for certain range and want lesser then that range. [Question - Painting Partition](https://practice.geeksforgeeks.org/problems/the-painters-partition-problem1535/1)
-    - Two pointers
-
-If asked for all permutations/subsets then
-    - Backtracking
-
-If given a tree then
-    - DFS
-    - BFS
-
-If given a graph then
-    - DFS
-    - BFS
-
-If given a linked list then
-    - Two pointers
-
-If recursion is banned then
-    - Stack
-
-If must solve in-place then
-    - Swap corresponding values
-    - Store one or more different values in the same pointer
-
-If asked for maximum/minimum subarray/subset/options then
-    - Dynamic programming
-
-If asked for top/least K items then
-    - Heap
-
-If asked for common strings then
-    - Map
-    - Trie
-
-Else
-    - Map/Set for O(1) time & O(n) space
-    - Sort input for O(nlogn) time and O(1) space
+- Binary search
+- We can you use BinarySearch for finding for certain range and want lesser then that range. [Question - Painting Partition](https://practice.geeksforgeeks.org/problems/the-painters-partition-problem1535/1)
+- Two pointers
     
+If we want to find next ele, "Next to you (Before/ After)"
+- Stack
+
+Input is a Binary Tree
+- DFS (Preorder, Inorder, Postorder): O(n)
+- BFS (Level Order): O(n)
+
+Input is a Binary Search Tree
+- Left < Cur < Right: O(log n)
+- Inorder Traversal visits the nodes in ascending (sorted) order: O(n)
+
+Input is a Matrix/Graph
+- DFS (Recursion, Stack): O(n)
+- BFS (Queue): O(n)
+
+Find the Shortest/Nearest Path/Distance in a Tree/Matrix/Graph
+- BFS (non-weighted): O(n)
+- Dijkstra (weighted): O(E log V)
+
+String Concatenation
+- StringBuilder: O(n) (Java, C#, etc.)
+- String.join(): O(n) (Python, JavaScript)
+
+Input is a Linked List
+- Dummy Node
+- Two Pointers: O(n)
+- Fast & Slow Pointers: O(n)
+
+Recomputing the Same Input
+- Memoization (DP)
+
+Recursion is Banned
+- Stack
+
+Permutations/Combinations/Subsets
+- Backtracking
+
+Find the Top/Least Kth element
+- QuickSelect: O(n) average, O(n²) worst
+- Heap: O(n log k)
+
+Common Strings
+- Map
+- Trie
+
+Sort
+- Quick Sort: O(n log n) average, O(n²) worst
+- Merge Sort: O(n log n)
+- Built-in sorts: O(n log n)
+
+Find the Smallest/Largest/Median in a Stream
+- Two Heaps
+
+Must Solve In-Place
+- Swap corresponding values
+- Store different values in the same pointer
+
+Maximum/Minimum Subarray/Subset/Options
+- Dynamic Programming
+
+Map/Set
+- Time: O(1)
+- Space: O(n)
+
+Deque
+- Replaces Stack, Queue, and LinkedList
  ```   
     For more checkout - (https://github.com/seanprashad/leetcode-patterns)
