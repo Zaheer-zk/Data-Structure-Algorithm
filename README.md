@@ -1,102 +1,54 @@
 # Data-Structure-Algorithm
 
+This repository contains C++ implementations of various data structures and algorithms. The code is organized into directories based on the data structure or algorithm being implemented.
+## Useful Patterns for DSA Interviews
 
-## Useful Pattern on DSA for Interview
+The following patterns can be used to solve many problems related to data structures and algorithms in technical interviews.
 
-1. Sliding Window
-2. Islands (Matrix Traversal)
-3. Two Pointers
-4. Fast & Slow Pointers
-5. Merge Intervals
-6. Cyclic Sort
-7. In-place Reversal of a LinkedList
-8. Tree Breadth-First Search
-9. Tree Depth First Search
-10. Two Heaps
-11. Subsets
-12. Modified Binary Search
-13. Bitwise XOR
-14. Top ‘K’ Elements
-15. K-way Merge
-16. Topological Sort
-17. 0/1 Knapsack
-18. Fibonacci Numbers
-19. Palindromic Subsequence
-20. Longest Common Substring
-
-## Tips to solve coding quetions
-
-```
-If input array is sorted then
-- Binary search
-- We can you use BinarySearch for finding for certain range and want lesser then that range. [Question - Painting Partition](https://practice.geeksforgeeks.org/problems/the-painters-partition-problem1535/1)
-- Two pointers
-    
-If we want to find next ele, "Next to you (Before/ After)"
-- Stack
-
-Input is a Binary Tree
-- DFS (Preorder, Inorder, Postorder): O(n)
-- BFS (Level Order): O(n)
-
-Input is a Binary Search Tree
-- Left < Cur < Right: O(log n)
-- Inorder Traversal visits the nodes in ascending (sorted) order: O(n)
-
-Input is a Matrix/Graph
-- DFS (Recursion, Stack): O(n)
-- BFS (Queue): O(n)
-
-Find the Shortest/Nearest Path/Distance in a Tree/Matrix/Graph
-- BFS (non-weighted): O(n)
-- Dijkstra (weighted): O(E log V)
-
-String Concatenation
-- StringBuilder: O(n) (Java, C#, etc.)
-- String.join(): O(n) (Python, JavaScript)
-
-Input is a Linked List
-- Dummy Node
-- Two Pointers: O(n)
-- Fast & Slow Pointers: O(n)
-
-Recomputing the Same Input
-- Memoization (DP)
-
-Recursion is Banned
-- Stack
-
-Permutations/Combinations/Subsets
-- Backtracking
-
-Find the Top/Least Kth element
-- QuickSelect: O(n) average, O(n²) worst
-- Heap: O(n log k)
-
-Common Strings
-- Map
-- Trie
-
-Sort
-- Quick Sort: O(n log n) average, O(n²) worst
-- Merge Sort: O(n log n)
-- Built-in sorts: O(n log n)
-
-Find the Smallest/Largest/Median in a Stream
+- Sliding Window
+- Islands (Matrix Traversal)
+- Two Pointers
+- Fast & Slow Pointers
+- Merge Intervals
+- Cyclic Sort
+- In-place Reversal of a LinkedList
+- Tree Breadth-First Search
+- Tree Depth First Search
 - Two Heaps
+- Subsets
+- Modified Binary Search
+- Bitwise XOR
+- Top ‘K’ Elements
+- K-way Merge
+- Topological Sort
+- 0/1 Knapsack
+- Fibonacci Numbers
+- Palindromic Subsequence
+- Longest Common Substring
 
-Must Solve In-Place
-- Swap corresponding values
-- Store different values in the same pointer
+## Tips for Solving Coding Questions
 
-Maximum/Minimum Subarray/Subset/Options
-- Dynamic Programming
+Here are some tips that can help you solve coding questions efficiently:
 
-Map/Set
-- Time: O(1)
-- Space: O(n)
+- If the input array is sorted, consider using Binary Search, Two Pointers, or Binary Search for finding for certain range and want less than that range.
+- If you want to find the next element, consider using a stack.
+- If the input is a binary tree, consider using DFS (Preorder, Inorder, Postorder) or BFS (Level Order).
+- If the input is a binary search tree, consider using Left < Cur < Right and Inorder Traversal.
+- If the input is a matrix/graph, consider using DFS (Recursion, Stack) or BFS (Queue).
+- To find the shortest/nearest path/distance in a tree/matrix/graph, consider using BFS (non-weighted) or Dijkstra (weighted).
+- For string concatenation, consider using StringBuilder or String.join().
+- If the input is a linked list, consider using a Dummy Node, Two Pointers, or Fast & Slow Pointers.
+- If you need to compute the same input multiple times, consider using Memoization (DP).
+- If recursion is banned, consider using a Stack.
+- To compute permutations/combinations/subsets, consider using Backtracking.
+- To find the top/least Kth element, consider using QuickSelect or Heap.
+- For common strings, consider using Map or Trie.
+- For sorting, consider using Quick Sort, Merge Sort, or built-in sorts.
+- To find the smallest/largest/median in a stream, consider using Two Heaps.
+- For maximum/minimum subarray/subset/options, consider using Dynamic Programming.
+- For Map/Set, the time complexity is O(1) and space complexity is O(n).
+- For Deque, you can replace Stack, Queue, and LinkedList.
 
-Deque
-- Replaces Stack, Queue, and LinkedList
- ```   
-    For more checkout - (https://github.com/seanprashad/leetcode-patterns)
+## License
+
+This project is licensed under the MIT License. Feel free to use the code for your personal or commercial projects. However, I cannot be held responsible for any issues or problems that arise from the use of this code.
