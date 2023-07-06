@@ -1,0 +1,18 @@
+{
+    "sourceFile": "dsa_in_js/Array/staticArray.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1688649721422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1688649721422,
+            "name": "Commit-0",
+            "content": "class StaticArray {\r\n\r\n    // Insert n into arr at the next open position.\r\n    // Length is the number of 'real' values in arr, and capacity\r\n    // is the size (aka memory allocated for the fixed size array).\r\n    insertEnd(arr, n, length,  capacity) {\r\n        if (length < capacity) {\r\n            arr[length] = n;\r\n        }\r\n    }  \r\n\r\n    // Remove from the last position in the array if the array\r\n    // is not empty (i.e. length is non-zero).\r\n    removeEnd(arr, length) {\r\n        if (length > 0) {\r\n            // Overwrite last element with some default value.\r\n            // We would also the length to decreased by 1.\r\n            arr[length - 1] = 0;\r\n            length--;\r\n        }\r\n    }  \r\n\r\n    // Insert n into index i after shifting elements to the right.\r\n    // Assuming i is a valid index and arr is not full.\r\n    insertMiddle(arr, i, n, length) {\r\n        // Shift starting from the end to i.\r\n        for (let index = length - 1; index > i - 1; index--) {\r\n            arr[index + 1] = arr[index];\r\n        }\r\n        //Insert at i\r\n        arr[i] = n;\r\n    }\r\n\r\n    // Remove value at index i before shifting elements to the left.\r\n    // Assuming i is a valid index.\r\n    removeMiddle(arr, i, length) {\r\n        // Shift starting from i + 1 to end.\r\n        for (let index = i + 1; index < length; index++) {\r\n            arr[index - 1] = arr[index];\r\n        } \r\n        // No need to 'remove' arr[i], since we already shifted\r\n    }\r\n\r\n    printArr(arr, length) {\r\n        let s = \"\";\r\n        for (let i = 0; i < length; i++) {\r\n            s+= arr[i] + \" \";\r\n        }      \r\n        console.log(s);\r\n    }\r\n}\r\n"
+        }
+    ]
+}

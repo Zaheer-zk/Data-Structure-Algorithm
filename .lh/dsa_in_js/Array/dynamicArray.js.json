@@ -1,0 +1,18 @@
+{
+    "sourceFile": "dsa_in_js/Array/dynamicArray.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1688650229644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1688650229644,
+            "name": "Commit-0",
+            "content": "class DynamicArray {\r\n    constructor() {\r\n        this.capacity = 2;\r\n        this.length = 0;\r\n        this.arr = new Array(2);\r\n    }\r\n\r\n    // Insert n in the last position of the array\r\n    pushback(n) {\r\n        if (this.length == this.capacity) {\r\n            this.resize();\r\n        }\r\n               \r\n        // insert at next empty position\r\n        this.arr[this.length] = n;\r\n        this.length++;\r\n    }\r\n\r\n    resize() {\r\n        // Create new array of double capacity\r\n        this.capacity = 2 * this.capacity;\r\n        const newArr = new Array(this.capacity); \r\n        \r\n        // Copy elements to newArr\r\n        for (let i = 0; i < this.length; i++) {\r\n            newArr[i] = this.arr[i];\r\n        }\r\n        this.arr = newArr;\r\n    } \r\n\r\n    // Remove the last element in the array\r\n    popback() {\r\n        if (this.length > 0) {\r\n            this.length--;\r\n        }  \r\n    }    \r\n\r\n    // Get value at i-th index\r\n    get(i) {\r\n        if (i < this.length) {\r\n            return this.arr[i];\r\n        }    \r\n        // Here we would throw an out of bounds exception\r\n        return;\r\n    }    \r\n\r\n    // Insert n at i-th index\r\n    insert(i, n) {\r\n        if (i < this.length) {\r\n            this.arr[i] = n;\r\n            return;\r\n        }    \r\n        return;\r\n        // Here we would throw an out of bounds exception  \r\n    } \r\n\r\n    print() {\r\n        let s = \"\";\r\n        for (let i = 0; i < this.length; i++) {\r\n            s+= this.arr[i] + \" \";\r\n        }      \r\n        console.log(s);\r\n    }\r\n}\r\n"
+        }
+    ]
+}
