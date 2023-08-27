@@ -1,0 +1,7 @@
+SUGGESTED PROBLEMS
+
+https://leetcode.com/problems/contains-duplicate/
+
+https://leetcode.com/problems/two-sum/
+
+https://leetcode.com/problems/lru-cache/
